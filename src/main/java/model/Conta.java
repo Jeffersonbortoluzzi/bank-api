@@ -1,9 +1,6 @@
 package model;
 
-import javax.persistence.Embeddable;
-import javax.persistence.Column;
-
-
+import javax.persistence.*;
 
 @Embeddable
 public class Conta {
@@ -12,7 +9,7 @@ public class Conta {
 
     @Column(name = "conta_saldo")
     private Double saldo;
-    public Long gêtNumero(){
+    public Long getNumero(){
         return numero;
     }
     public void setNumero(Long numero){
